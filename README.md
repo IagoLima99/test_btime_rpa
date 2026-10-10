@@ -37,3 +37,27 @@ python -m venv .venv
 python -m pip install --upgrade pip
 pip install -r requirements.txt
 Copy-Item .env.example .env
+```
+
+## Execução
+
+Execute cada coleta de forma independente, a partir da raiz do projeto:
+
+```powershell
+python main_api.py
+python main_scraper.py
+```
+
+Por padrão, as execuções geram os seguintes arquivos:
+
+- `cotacao_api.csv`: cotação obtida pela API Frankfurter.
+- `cotacao_scraping.csv`: cotação obtida por web scraping.
+
+Os caminhos de saída, URLs, timeouts e demais parâmetros podem ser ajustados
+no arquivo `.env`, usando `.env.example` como referência.
+
+## Testes
+
+```powershell
+python -m pytest
+```
