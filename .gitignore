@@ -1,0 +1,34 @@
+﻿# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Segredos e configurações locais
+.env
+.env.local
+.env.*.local
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.pytest-tmp/ 
+
+# Build e distribuição
+build/
+dist/
+*.egg-info/
+
+# IDEs e sistema operacional
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
